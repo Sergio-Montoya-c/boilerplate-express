@@ -46,7 +46,9 @@ var app = express();
 
 /** 12) Get data form POST  */
 
-
+app.get('/', (req, res) => {
+  res.send("Hello Express");
+});
 
 // This would be part of the basic setup of an Express app
 // but to allow FCC to run tests, the server is already active
@@ -54,7 +56,5 @@ var app = express();
 
 //---------- DO NOT EDIT BELOW THIS LINE --------------------
 
- module.exports = app;
+module.exports = app;
 
-
- console.log("Hello World");
